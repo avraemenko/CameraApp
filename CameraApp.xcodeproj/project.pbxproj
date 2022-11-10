@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5421A85E291C556700709D9B /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5421A85D291C556700709D9B /* GalleryViewController.swift */; };
+		5421A862291C626900709D9B /* MediaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5421A861291C626900709D9B /* MediaViewCell.swift */; };
 		544ED637291AFE6A00A695CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544ED636291AFE6A00A695CF /* AppDelegate.swift */; };
 		544ED639291AFE6A00A695CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544ED638291AFE6A00A695CF /* SceneDelegate.swift */; };
 		544ED63B291AFE6A00A695CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544ED63A291AFE6A00A695CF /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 		544ED64E291AFE6A00A695CF /* CameraAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544ED64D291AFE6A00A695CF /* CameraAppTests.swift */; };
 		544ED658291AFE6A00A695CF /* CameraAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544ED657291AFE6A00A695CF /* CameraAppUITests.swift */; };
 		544ED65A291AFE6A00A695CF /* CameraAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544ED659291AFE6A00A695CF /* CameraAppUITestsLaunchTests.swift */; };
+		544ED668291B001B00A695CF /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544ED667291B001B00A695CF /* Camera.swift */; };
+		5492C83B291C463900C64F7B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5492C83A291C463900C64F7B /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5421A85D291C556700709D9B /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		5421A861291C626900709D9B /* MediaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewCell.swift; sourceTree = "<group>"; };
 		544ED633291AFE6A00A695CF /* CameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		544ED636291AFE6A00A695CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		544ED638291AFE6A00A695CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		544ED653291AFE6A00A695CF /* CameraAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		544ED657291AFE6A00A695CF /* CameraAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAppUITests.swift; sourceTree = "<group>"; };
 		544ED659291AFE6A00A695CF /* CameraAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		544ED667291B001B00A695CF /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		5492C83A291C463900C64F7B /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5421A85F291C558400709D9B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				544ED63A291AFE6A00A695CF /* ViewController.swift */,
+				5421A85D291C556700709D9B /* GalleryViewController.swift */,
+				5492C83A291C463900C64F7B /* PlayerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5421A860291C55A000709D9B /* other */ = {
+			isa = PBXGroup;
+			children = (
+				544ED63F291AFE6A00A695CF /* Assets.xcassets */,
+				544ED641291AFE6A00A695CF /* LaunchScreen.storyboard */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
 		544ED62A291AFE6A00A695CF = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +126,12 @@
 		544ED635291AFE6A00A695CF /* CameraApp */ = {
 			isa = PBXGroup;
 			children = (
-				544ED636291AFE6A00A695CF /* AppDelegate.swift */,
-				544ED638291AFE6A00A695CF /* SceneDelegate.swift */,
-				544ED63A291AFE6A00A695CF /* ViewController.swift */,
-				544ED63C291AFE6A00A695CF /* Main.storyboard */,
-				544ED63F291AFE6A00A695CF /* Assets.xcassets */,
-				544ED641291AFE6A00A695CF /* LaunchScreen.storyboard */,
 				544ED644291AFE6A00A695CF /* Info.plist */,
+				544ED667291B001B00A695CF /* Camera.swift */,
+				544ED63C291AFE6A00A695CF /* Main.storyboard */,
+				5421A85F291C558400709D9B /* Controllers */,
+				544ED666291AFFFE00A695CF /* Delegates */,
+				5421A861291C626900709D9B /* MediaViewCell.swift */,
 			);
 			path = CameraApp;
 			sourceTree = "<group>";
@@ -125,6 +151,16 @@
 				544ED659291AFE6A00A695CF /* CameraAppUITestsLaunchTests.swift */,
 			);
 			path = CameraAppUITests;
+			sourceTree = "<group>";
+		};
+		544ED666291AFFFE00A695CF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				544ED636291AFE6A00A695CF /* AppDelegate.swift */,
+				544ED638291AFE6A00A695CF /* SceneDelegate.swift */,
+				5421A860291C55A000709D9B /* other */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544ED668291B001B00A695CF /* Camera.swift in Sources */,
 				544ED63B291AFE6A00A695CF /* ViewController.swift in Sources */,
 				544ED637291AFE6A00A695CF /* AppDelegate.swift in Sources */,
+				5421A85E291C556700709D9B /* GalleryViewController.swift in Sources */,
+				5421A862291C626900709D9B /* MediaViewCell.swift in Sources */,
 				544ED639291AFE6A00A695CF /* SceneDelegate.swift in Sources */,
+				5492C83B291C463900C64F7B /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +390,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -410,6 +451,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -435,22 +477,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I need to see ya!!!";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "I wanna see ya";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_CODE_SIGN_FLAGS[sdk=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.CameraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,15 +511,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VNU8KKW4GG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CameraApp/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I need to see ya!!!";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "I wanna see ya";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +532,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.CameraApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
