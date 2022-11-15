@@ -135,14 +135,25 @@ private extension Camera {
     }
     
     func setupInputs() throws {
-        currentCameraInput = try AVCaptureDeviceInput(device: currentCamera)
-        
-        if captureSession.canAddInput(currentCameraInput) {
-            captureSession.addInput(currentCameraInput)
-        } else {
-            throw CameraError.cantAddInput
+            guard let audioDevice = AVCaptureDevice.default(for: AVMediaType.audio) else { return }
+            let audioInput = try AVCaptureDeviceInput(device: audioDevice)
+            
+            currentCameraInput = try AVCaptureDeviceInput(device: currentCamera)
+            
+            if captureSession.canAddInput(currentCameraInput) {
+                captureSession.addInput(currentCameraInput)
+            } else {
+                throw CameraError.cantAddInput
+            }
+            
+            if captureSession.canAddInput(audioInput) {
+                captureSession.addInput(audioInput)
+            } else {
+                throw CameraError.cantAddInput
+            }
+            
+            
         }
-    }
     
     func setupOutputs() throws {
         photoOutput = AVCapturePhotoOutput()

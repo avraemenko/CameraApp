@@ -37,16 +37,11 @@ extension GalleryViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var newPath = 0
         if let playerVC = storyboard?.instantiateViewController(identifier: "playerViewController") as? PlayerViewController {
-            if !playerVC.playNext {
                 playerVC.receivedUrl = urls[indexPath.row]
                 playerVC.configure(url: urls[indexPath.row])
-            }
-            else {
-                newPath = indexPath.row + 1
-                playerVC.receivedUrl = urls[newPath]
-            }
+                playerVC.allUrls = urls
+                playerVC.index = indexPath.row
             
             self.navigationController?.pushViewController(playerVC, animated: true)
             show(playerVC, sender: self)

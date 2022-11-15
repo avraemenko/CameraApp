@@ -141,20 +141,20 @@
                                     <constraint firstAttribute="height" constant="250" id="sb1-G4-vJB"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myL-ge-wGi">
-                                <rect key="frame" x="161" y="706" width="69" height="54.666666666666629"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myL-ge-wGi">
+                                <rect key="frame" x="161" y="687.66666666666663" width="69" height="73"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="volume.3.fill" catalog="system" imagePlacement="top" title="on/off" imagePadding="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" image="volume.3.fill" catalog="system" imagePlacement="top" imagePadding="0.0"/>
                                 <connections>
                                     <action selector="toggleVolume:" destination="CfM-N8-RbG" eventType="touchUpInside" id="qlG-6n-WLZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xp-Hr-hxZ">
-                                <rect key="frame" x="144" y="648" width="102" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xp-Hr-hxZ">
+                                <rect key="frame" x="144" y="602" width="102" height="62.666666666666629"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start/Stop"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" imagePlacement="top" title="Play" imagePadding="8"/>
                                 <connections>
                                     <action selector="togglePlay" destination="CfM-N8-RbG" eventType="touchUpInside" id="0kO-id-8uO"/>
                                 </connections>
@@ -183,7 +183,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yM-Ky-Zui">
                                 <rect key="frame" x="301" y="457" width="51" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="51" id="4ji-IX-qpS"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="bzK-cv-XnG"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -200,14 +199,14 @@
                             <constraint firstItem="wCy-5d-fjM" firstAttribute="baseline" secondItem="5yM-Ky-Zui" secondAttribute="baseline" id="0ys-xh-tZh"/>
                             <constraint firstItem="Z0N-aK-GCj" firstAttribute="leading" secondItem="9B2-PD-ZcR" secondAttribute="leading" id="1uN-01-DcU"/>
                             <constraint firstItem="Ksg-fy-3wH" firstAttribute="leading" secondItem="9B2-PD-ZcR" secondAttribute="leading" constant="127" id="62b-hk-csc"/>
-                            <constraint firstItem="6xp-Hr-hxZ" firstAttribute="top" secondItem="Ksg-fy-3wH" secondAttribute="bottom" constant="156" id="7px-vZ-kxf"/>
+                            <constraint firstItem="6xp-Hr-hxZ" firstAttribute="top" secondItem="Ksg-fy-3wH" secondAttribute="bottom" constant="110" id="7px-vZ-kxf"/>
                             <constraint firstItem="Z0N-aK-GCj" firstAttribute="top" secondItem="9B2-PD-ZcR" secondAttribute="top" id="A9F-Uo-yJy"/>
                             <constraint firstItem="9B2-PD-ZcR" firstAttribute="trailing" secondItem="5yM-Ky-Zui" secondAttribute="trailing" constant="38" id="Az5-3j-Alb"/>
                             <constraint firstItem="9B2-PD-ZcR" firstAttribute="trailing" secondItem="Ksg-fy-3wH" secondAttribute="trailing" constant="127" id="Ce6-6x-4lE"/>
                             <constraint firstItem="wCy-5d-fjM" firstAttribute="top" secondItem="Ksg-fy-3wH" secondAttribute="top" id="Fb0-T0-fZD"/>
                             <constraint firstItem="6xp-Hr-hxZ" firstAttribute="leading" secondItem="9B2-PD-ZcR" secondAttribute="leading" constant="144" id="K0t-Pm-vH6"/>
                             <constraint firstItem="Ksg-fy-3wH" firstAttribute="leading" secondItem="wCy-5d-fjM" secondAttribute="trailing" constant="37" id="KKl-yE-TfN"/>
-                            <constraint firstItem="6xp-Hr-hxZ" firstAttribute="top" secondItem="Ksg-fy-3wH" secondAttribute="bottom" constant="156" id="Xy6-FA-CuT"/>
+                            <constraint firstItem="6xp-Hr-hxZ" firstAttribute="top" secondItem="Ksg-fy-3wH" secondAttribute="bottom" constant="110" id="Xy6-FA-CuT"/>
                             <constraint firstItem="9B2-PD-ZcR" firstAttribute="trailing" secondItem="6xp-Hr-hxZ" secondAttribute="trailing" constant="144" id="a83-tF-eHC"/>
                             <constraint firstItem="myL-ge-wGi" firstAttribute="leading" secondItem="9B2-PD-ZcR" secondAttribute="leading" constant="161" id="bCN-9u-sZd"/>
                             <constraint firstItem="9B2-PD-ZcR" firstAttribute="trailing" secondItem="myL-ge-wGi" secondAttribute="trailing" constant="160" id="dvM-EF-fso"/>
@@ -222,7 +221,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="g80-Ed-oQf"/>
                     <connections>
+                        <outlet property="playStopButton" destination="6xp-Hr-hxZ" id="VfF-dA-VG7"/>
                         <outlet property="playerContainer" destination="Z0N-aK-GCj" id="dB8-92-GFK"/>
+                        <outlet property="saveToGalleryButton" destination="6xp-Hr-hxZ" id="6vg-ax-UzK"/>
+                        <outlet property="volumeButton" destination="myL-ge-wGi" id="PJM-sz-ulm"/>
                     </connections>
                 </viewController>
             </objects>
@@ -255,6 +257,7 @@
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
         <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
         <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
         <image name="volume.3.fill" catalog="system" width="128" height="84"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
