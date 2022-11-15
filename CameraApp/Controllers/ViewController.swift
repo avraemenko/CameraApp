@@ -9,7 +9,7 @@ import UIKit
 import Photos
 
 class ViewController: UIViewController {
-
+    
     let camera = Camera()
     
     private var urlList : [URL] = []
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         camera.delegate = self
     }
-
+    
     @IBAction func switchCamera() {
         do {
             try camera.switchCamera()
@@ -62,8 +62,9 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let urls = sender as? [URL] {
             (segue.destination as? GalleryViewController)?.urls = urls
+            }
         }
-    }
+    
 }
 
 extension ViewController: CameraDelegate {
@@ -86,5 +87,6 @@ extension ViewController: CameraDelegate {
         performSegue(withIdentifier: "gallery", sender: urlList)
     }
     
+   
     
 }

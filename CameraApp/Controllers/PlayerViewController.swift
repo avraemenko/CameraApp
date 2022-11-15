@@ -8,17 +8,28 @@
 import Foundation
 import AVFoundation
 import UIKit
+import Photos
 
-final class PlayerViewController: UIViewController {
+final class PlayerViewController: UIViewController, ObservableObject{
     
-    var player: AVPlayer?
-    var url: URL!
+    @Published var player: AVPlayer?
+    @Published var receivedUrl: URL!
     private var isPlaying = false
+    private var volumeOn = true
+    @Published var playNext = false
     
+    @IBOutlet weak var playerContainer: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configure(url: receivedUrl)
+    }
+    
+    func configure(url: URL){
+       
+        self.loadViewIfNeeded()
+        receivedUrl = url
+        if url.pathExtension == "mov" {
         player = .init(url: url)
         
         let layer = AVPlayerLayer(player: player)
@@ -26,8 +37,21 @@ final class PlayerViewController: UIViewController {
         layer.frame = playerContainer.bounds
         
         playerContainer.layer.addSublayer(layer)
+        
     }
-    @IBOutlet weak var playerContainer: UIView!
+    else {
+        let data = try! Data(contentsOf: url)
+        let image = UIImage(data: data)
+        let imageView = UIImageView(image: image!)
+
+        imageView.frame = playerContainer.bounds
+        imageView.contentMode = .scaleAspectFit
+        playerContainer.addSubview(imageView)
+     
+       
+    }
+    }
+   
 
     @IBAction func togglePlay() {
         isPlaying.toggle()
@@ -35,6 +59,8 @@ final class PlayerViewController: UIViewController {
     }
     
     @IBAction func playNext(_ sender: Any) {
+        self.playNext = true
+        configure(url: receivedUrl)
     }
     
     
@@ -43,10 +69,14 @@ final class PlayerViewController: UIViewController {
     
     
     @IBAction func toggleVolume(_ sender: Any) {
+        volumeOn.toggle()
+        volumeOn ? (player?.isMuted = true) : (player?.isMuted = false)
     }
     
     @IBAction func saveToGallery(_ sender: Any) {
+//        PHPhotoLibrary.shared().performChanges{
+//            PHAssetCreationRequest.forAsset().addResource(with: .photo, data: imageData, options: nil)
+//        }
     }
-    
     
 }

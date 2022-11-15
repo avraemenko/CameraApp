@@ -90,6 +90,7 @@
 				544ED63A291AFE6A00A695CF /* ViewController.swift */,
 				5421A85D291C556700709D9B /* GalleryViewController.swift */,
 				5492C83A291C463900C64F7B /* PlayerViewController.swift */,
+				5421A861291C626900709D9B /* MediaViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,7 +132,6 @@
 				544ED63C291AFE6A00A695CF /* Main.storyboard */,
 				5421A85F291C558400709D9B /* Controllers */,
 				544ED666291AFFFE00A695CF /* Delegates */,
-				5421A861291C626900709D9B /* MediaViewCell.swift */,
 			);
 			path = CameraApp;
 			sourceTree = "<group>";

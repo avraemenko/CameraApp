@@ -75,7 +75,7 @@ extension Camera {
     func capturePhoto(){
         let settings = AVCapturePhotoSettings()
         
-        settings.flashMode = .on
+       // settings.flashMode = .on
         settings.isAutoRedEyeReductionEnabled = true
         
         photoOutput.capturePhoto(with: settings, delegate: self)
@@ -119,7 +119,6 @@ private extension Camera {
     }
     
     func setupDevices() throws {
-//        let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: cameraPosition == .back ? [.] : [.builtInWideAngleCamera], mediaType: .video, position: .unspecified)
         let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .unspecified)
         
         let cameras = discoverySession.devices
